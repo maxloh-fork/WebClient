@@ -206,7 +206,7 @@ function main(argv) {
                 {
                     title: `Build the settings application ${suffixRemote('pm-settings')}`,
                     skip() {
-                        if (argv.settings === false) {
+                        if (!argv.v4 || argv.settings === false) {
                             return 'Flag --no-settings inside the command.';
                         }
                     },
@@ -219,7 +219,7 @@ function main(argv) {
                 {
                     title: `Build the contacts application ${suffixRemote('contacts')}`,
                     skip() {
-                        if (argv.contacts === false) {
+                        if (!argv.v4 || argv.contacts === false) {
                             return 'Flag --no-contacts inside the command.';
                         }
                     },
@@ -231,7 +231,7 @@ function main(argv) {
                 {
                     title: `Build the calendar application ${suffixRemote('calendar')}`,
                     skip() {
-                        if (argv.calendar === false || !featureFlags.includes('calendar')) {
+                        if (!argv.v4 || argv.calendar === false || !featureFlags.includes('calendar')) {
                             return 'Flag --no-calendar inside the command.';
                         }
                     },

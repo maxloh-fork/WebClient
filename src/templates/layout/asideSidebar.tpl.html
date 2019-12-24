@@ -14,19 +14,6 @@
                 <span class="sr-only" translate translate-context="Action">Mailbox</span>
             </a>
         </li>
-        <li class="mb0-5" ng-if="hasCalendar">
-            <a
-                href="/calendar"
-                class="center flex aside-link"
-                translate-title="Calendar"
-                translate-title-context="Action"
-                pt-placement="right"
-                pt-tooltip-translate="ProtonCalendar"
-                pt-tooltip-translate-context="Sidebar left tooltip icon">
-                <icon data-name="protoncalendar" data-fill="global-light" class="aside-linkIcon mauto"></icon>
-                <span class="sr-only" translate translate-context="Action">Calendar</span>
-            </a>
-        </li>
         <li class="mb0-5">
             <a
                 href="/contacts"
@@ -38,6 +25,19 @@
                 pt-tooltip-translate-context="Sidebar left tooltip icon">
                 <icon data-name="protoncontacts" data-fill="global-light" class="aside-linkIcon mauto"></icon>
                 <span class="sr-only" translate translate-context="Action">Contacts</span>
+            </a>
+        </li>
+        <li class="mb0-5" ng-if="hasCalendar">
+            <a
+                href="/calendar"
+                class="center flex aside-link"
+                translate-title="Calendar"
+                translate-title-context="Action"
+                pt-placement="right"
+                pt-tooltip-translate="ProtonCalendar"
+                pt-tooltip-translate-context="Sidebar left tooltip icon">
+                <icon data-name="protoncalendar" data-fill="global-light" class="aside-linkIcon mauto"></icon>
+                <span class="sr-only" translate translate-context="Action">Calendar</span>
             </a>
         </li>
 

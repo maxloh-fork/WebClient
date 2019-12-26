@@ -31,9 +31,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: rgba($sidebar-color, .8);
+    color: var(--color-nav-link, rgba($sidebar-color, .8));
 
-    &:hover { color: rgba($sidebar-color, 1) }
+    &:hover { color: var(--color-nav-link, $sidebar-color); }
 }
 
 .sidebarApp-item .navigationItem-item {
@@ -43,13 +43,8 @@
     line-height: initial;
 }
 
-.sidebarApp-item .sidebarApp-label {
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
 .sidebarApp-menu .menuLabel-link {
-    color: rgba($sidebar-color, .5);
+    color: var(--color-nav-link, rgba($sidebar-color, .5));
 }
 
 .sidebarApp-item .sidebarApp-icon,
@@ -67,22 +62,17 @@
 .menuLabel-item.active .menuLabel-link {
     background-color: rgba( $sidebar-color , .06);
     border-color: transparent;
-    color: $sidebar-color;
+    color: var(--color-nav-link, $sidebar-color);
     font-weight: 700;
 }
 .sidebarApp-item.active .navigationItem-icon { color: lighten($primary, 6); }
 
-.menuLabel-item .menuLabel-title {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .menuLabel-title {
      max-width: calc( var(--width-sidebar, #{$width-sidebar}) - 7.5rem); // icons + paddings + number of messages
 }
 
 .menuLabel-item.active {
-    .menuLabel-title { color: $sidebar-color }
+    .menuLabel-title { color: var(--color-nav-active, $sidebar-color);  }
 }
 
 [id="labelSettings"] { margin-bottom: 0 }

@@ -66,9 +66,9 @@
     }
     .message {
 
-        &.unread .message-header {
-            background: $white
-        }
+        // &.unread .message-header {
+        //     background: $white
+        // }
 
         .recipients-details .messageContacts-email { margin-left: .5em; }
 
@@ -417,15 +417,16 @@
 
 .message.unread:not(.draft) {
     .message-header {
-        background: $white
+        background: var(--bordercolor-input, $white);
+
     }
 
     .message-header.message-summary::before {
-        background-color: $white;
+        background: var(--bordercolor-input, $white);
     }
 
     .message-header.message-summary::before {
-        background-color: $white;
+        background: var(--bordercolor-input, $white);
 
     }
 }

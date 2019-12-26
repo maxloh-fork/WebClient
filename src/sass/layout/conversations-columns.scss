@@ -10,7 +10,7 @@
     &:not(.expiring) .conversation-icon-expiration { display: none }
 
     &:not(.read):not(.active) {
-        background: $white;
+        background: var(--bgcolor-toolbar, $white);
         .subject-text,
         .senders,
         .time,

@@ -240,14 +240,14 @@
 
                             <ul className="m0 mt1 mb1 p0 unstyled" ng-if="ctrl.selectedLabels.length">
                                 <li
-                                    class="flex filterModal-item-label"
+                                    class="flex flex-items-center flex-nowrap filterModal-item-label"
                                     ng-repeat="label in ctrl.selectedLabels track by label.ID">
-                                    <icon data-name="label" ng-style="{ fill: label.Color }" class="mr1"></icon>
-                                    <span class="ellipsis w70">{{::label.Name }}</span>
+                                    <icon data-name="label" ng-style="{ fill: label.Color }" class="mr1 flex-item-noshrink"></icon>
+                                    <span class="ellipsis flex-item-fluid">{{::label.Name }}</span>
                                     <button
                                         type="button"
                                         ng-click="ctrl.removeLabel($index, label)"
-                                        class="pm-button--small mlauto"
+                                        class="pm-button pm-button--small ml1"
                                         translate-context="Action"
                                         translate>Remove</button>
                                 </li>

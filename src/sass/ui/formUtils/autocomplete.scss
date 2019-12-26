@@ -70,7 +70,7 @@
         overflow: auto;
         z-index: 99999;
         border: 1px solid var(--bordercolor-input, $border);
-        background-color: var(--bgcolor-input, $white);
+        background: var(--bgcolor-input, $white);
         box-shadow: none;
         transform: scale(1) !important;
         transition-duration: 0s !important;
@@ -81,7 +81,7 @@
     ul:empty,
     ul::before {display: none}
 
-    li[aria-selected="true"], li[aria-selected="true"]:hover {background-color: var(--bgcolor-input,$default-color-light);}
+    li[aria-selected="true"] {background-color: var(--bgcolor-input,$default-color-light);}
 
     li:hover {background-color: var(--bordercolor-input, $light);}
 

@@ -1,5 +1,5 @@
 .composer-container,
 .squire-container {
-    background: $composer-background;
+    background: var(--bgcolor-toolbar, $composer-background);
     color: var(--color-main-area, $composer-color);
 }

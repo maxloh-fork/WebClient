@@ -48,6 +48,7 @@
     border: none;
     padding: 1rem 10px;
     font-family: monospace;
+    color: var(--color-main-area, $composer-color);
 }
 
 .editor-container {

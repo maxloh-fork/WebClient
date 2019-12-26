@@ -11,7 +11,7 @@ function progressUpload(dispatchers) {
      * @return {String}          CSS gradient declaration
      */
     const getProgressStyle = (progress = 0) => {
-        return `linear-gradient(90deg, rgba(${UPLOAD_GRADIENT_DARK}, 1) ${progress}%, rgba(${UPLOAD_GRADIENT_LIGHT}, 1) 0%)`;
+        return `linear-gradient(90deg, rgba(${UPLOAD_GRADIENT_DARK}, 1) ${progress}%, var(--bgcolor-main-area, rgba(${UPLOAD_GRADIENT_LIGHT}), 1) 0%)`;
     };
 
     /**

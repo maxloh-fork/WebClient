@@ -88,6 +88,10 @@ function squireEditor(dispatchers, editorModel, sanitize, AppModel) {
                 word-wrap: break-word;
             }
 
+            body a {
+                color: #657ee4;
+            }
+
             blockquote {
                 padding: 0 0 0 1rem;
                 margin: 0;

@@ -9,7 +9,7 @@ const customTheme = (AppModel, dispatchers, mailSettingsModel, organizationModel
 
             if (isLoggedIn) {
                 const { Theme: organizationTheme } = organizationModel.get() || {};
-                const userTheme = mailSettingsModel.get('Theme');
+                const userTheme = mailSettingsModel.get('Theme') || '';
                 const isDarkMode = userTheme.startsWith('/* dark-mode');
                 AppModel.set('darkmode', isDarkMode);
 

@@ -9,13 +9,17 @@
     &:not(.hasAttachments) .conversation-icon-attachment,
     &:not(.expiring) .conversation-icon-expiration { display: none }
 
-    &:not(.read):not(.active) {
+    &:not(.active) {
         background: var(--bgcolor-toolbar, $white);
-        .subject-text,
-        .senders,
-        .time,
-        .subject-num-message { font-weight: bold; }
+        
     }
+    &:not(.read) {
+      .subject-text,
+      .senders,
+      .time,
+      .subject-num-message { font-weight: bold; }
+    }
+
     &.marked::before {
         background-color: $pm-blue;
         content: '';

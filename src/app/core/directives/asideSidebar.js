@@ -1,5 +1,3 @@
-import CONFIG from '../../config';
-
 /* @ngInject */
 function asideSidebar(userType) {
     return {
@@ -8,7 +6,7 @@ function asideSidebar(userType) {
         templateUrl: require('../../../templates/layout/asideSidebar.tpl.html'),
         scope: {},
         link(scope) {
-            scope.hasCalendar = CONFIG.featureFlags.includes('calendar') && userType().isPaid;
+            scope.hasCalendar = userType().isPaid;
         }
     };
 }

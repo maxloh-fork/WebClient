@@ -74,7 +74,7 @@ function SecuredController(
         AppModel.set('showWelcome', true);
     });
 
-    const ONBOARD_MODAL_COOKIE = 'protonmail-v4-onboard-modal';
+    const ONBOARD_MODAL_COOKIE = 'protonmail-v4-onboard-modal-v2';
 
     /*
         Cookie is not bulletproof

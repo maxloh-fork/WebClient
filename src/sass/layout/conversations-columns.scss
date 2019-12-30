@@ -9,10 +9,10 @@
     &:not(.hasAttachments) .conversation-icon-attachment,
     &:not(.expiring) .conversation-icon-expiration { display: none }
 
-    &:not(.active) {
+    &:not(.active):not(.read) {
         background: var(--bgcolor-toolbar, $white);
-        
     }
+
     &:not(.read) {
       .subject-text,
       .senders,

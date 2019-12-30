@@ -7,10 +7,9 @@ const sidebarMobile = (sidebarModel, dispatchers, authentication, AppModel, user
         const { on, unsubscribe } = dispatchers();
 
         const setUserType = () => {
-            const { isAdmin, isFree, isPaid } = userType();
+            const { isAdmin, isFree } = userType();
             scope.isAdmin = isAdmin;
             scope.isFree = isFree;
-            scope.hasCalendar = isPaid;
         };
         setUserType();
         scope.listStates = Object.keys(sidebarModel.getStateConfig());
